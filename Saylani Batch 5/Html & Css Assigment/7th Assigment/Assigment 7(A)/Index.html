@@ -1,0 +1,202 @@
+<!DOCTYPE> 
+
+<html> 
+
+	<head>
+           
+		<title>Css Selector</title>   
+		<link href="Css/style.css" type="text/css" rel="stylesheet"/>       
+     
+
+	</head>
+
+      
+      
+
+
+
+
+	<body> 
+		<center>
+			<h1>Css Selector</h1>
+
+
+			<table border="1" cellspacing="5">
+
+				<tr>
+
+				<th>Selector</th>
+				<th>Description</th>	
+				<th>Input</th>
+				<th>Output</th>
+
+
+				<tr>
+		
+			<tr >
+			  <td>Universal Selector</td>
+			  <td>It applies to all element in the document.</td>
+			  <td>*{ color:blue; }</td>
+
+			  <td id="universal">
+					<center><h1>Universal Selector</h1></center>
+			  The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. 
+
+			</td>
+
+
+			</tr>
+
+
+			<tr>
+			  <td>Type Selector</td>
+			  <td>Matches element names.</td>
+			  <td>td p,h1{ color:red; }</td>
+
+			   <td class="type" >
+					<center><h1>Type Selector</h1></center>
+			  <p>The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. </p>
+
+			</td>
+
+			</tr>
+
+			
+			<tr>
+			  <td>Class Selector</td>
+			  <td>Marches an element whose class attribute <br> has a value that matches the one specified <br />after the period  (or full stop) symbol.</td>
+			  <td>.class_selector{ color:orange; }</td>
+
+			   <td >
+					<center><h1 class="class">Class Selector</h1></center>
+			  The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. 
+
+			</td>
+
+
+			</tr>
+			
+
+
+			<tr>
+			  <td>ID Selector</td>
+			  <td>The ID selector is a unique id and it <br /> specified with # symbol.</td>
+			  <td>#id_slector{ color:pink; }</td>
+			  
+			 <td>
+					<center><h1>ID Selector</h1></center>
+			  <p id="id">The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. <p/>
+
+			</td>
+
+
+			</tr>
+
+
+			<tr>
+			  <td>Chlid Selector</td>
+			  <td>Matches an element that is a direct <br />child of another element.</td>
+			  <td> div>h1 {color:purple; }</td>
+			 
+
+			
+			 <td>
+			<div>
+					<center><h1>child Selector</h1></center>
+			  The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. 
+			</div>
+			</td>
+			
+			</tr>
+
+
+			<tr>
+			  <td>Descendant Selector</td>
+			  <td>Matches an element that is a descendet <br /> of another  specfied elemetn (not just <br />a direct child of that elemet.</td>
+			  <td>p a{color:brown;}</td>
+			  
+
+			 <td>
+						<center><h1>Descendant Selector</h1></center>
+			  The Paragraphs <p><a href="">module allows</a> </p>content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, <p><a href="">the dreaded block placement</a></p> config screen or Panelizer overrides.
+
+			</td>
+
+			</tr>
+
+			
+
+			<tr>
+			  <td>Adjacent Sibling Selector</td>
+			  <td>Matches an element that is the next <br /> sibling of another.</td>
+			  <td>h2+p{ color:blue; }</td>
+			 
+			
+			 <td>
+					<h2>Adjacent Selector</h2>
+			  <p>The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. </p>
+
+			</td>
+
+			</tr>
+
+
+			<tr>
+			  <td>General Sibling Selector</td>
+			  <td>Matches an element that is a sibling of another, <br /> although it does not have to be the directly preceding element</td>
+			  <td>h3~p { color:blue; }</td>
+			 
+
+			 <td>
+					<h3>General Sibling Selector</h3>
+			  <p>The Paragraphs module allows content creators to choose which kinds <br />
+			   of paragraphs they want to place on the page, and the order in which they want <br />
+			   to place them. They can do all of this through the familiar node edit screen. There <br />
+			   is no need to resort to code, the dreaded block placement config screen or Panelizer overrides. </p>
+
+			</td>
+
+			</tr>
+
+
+
+
+
+
+
+			</table>
+
+		</center>
+
+
+   	</body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,54 @@
+body{
+
+    background-image: url("../Images/bg3.jpg");
+    /* background: no-repeat; */
+    background-color: #cccccc;
+    /* background: no-repeat; */
+    background-size: cover;
+    
+    
+}
+
+.container{
+
+    -webkit-box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.63);
+    box-shadow: 3px 3px 7px 3px rgba(0,0,0,0.63);
+    margin-top: 13%;
+
+    width: 415px;
+    height: 380px;
+
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+table td{
+
+    font-size: 17px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 55px;
+
+}
+
+
+
+
+
+.login{
+
+    font-size: 20px;
+    width: 235px;
+    background-color: teal;
+    border-radius: 5px;
+    margin-left:  65px ;
+}
+
+.error{
+
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}

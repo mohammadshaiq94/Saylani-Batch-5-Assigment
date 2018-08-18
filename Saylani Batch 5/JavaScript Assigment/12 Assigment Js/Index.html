@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assigmet 12 List Update</title>
+
+
+    <style>
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    #edit{
+        display: inline-block;
+    
+    width: 75px;
+    height: 35px;
+    border: 2px solid ;
+    border-radius: 6px;
+    background-color: white;
+    color: rgb(80, 51, 51);
+    font-weight: bold;
+    cursor: pointer;
+            
+
+    }
+
+    #select{
+
+        border-radius: 6px;
+        color: rgb(80, 51, 51);
+        width:48px;
+        border: 2px solid ;
+        height: 35px;
+    }
+    
+    #input{
+        border-radius: 6px;
+        color: rgb(80, 51, 51);
+        width:192px;
+        border: 2px solid ;
+        height: 30px;
+    }
+    
+    .List{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    </style>
+</head>
+
+<body>
+
+
+        <ol class="List">
+
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ol>
+
+<hr>
+
+<center>
+        <form>
+                <input type="text" name="input" id="input" placeholder="Enter anythig to update list">
+                <select name="number" id="select">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <button type="button" name="edit" id="edit" onclick="replacement()">Update</button>
+            </form>
+
+        </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+
+            var numX;
+
+            
+            function replacement() {
+
+    numX = (document.getElementById("select").selectedIndex);
+    var list = document.getElementsByTagName("li");
+    var update = document.getElementById("input");
+    list[numX].innerHTML = update.value;
+    update.value = ""
+
+ 
+            
+            }
+            
+            
+            
+            
+            </script>
+
+</body>
+</html>

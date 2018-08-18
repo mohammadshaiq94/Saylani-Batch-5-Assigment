@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assigment 19</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function userGen(id, name, pro_pic, time, friends) {
+        this.id = id;
+        this.name = name;
+        this.pro_pic = pro_pic;
+        this.createdAt = time;
+        this.friends = friends;
+    }
+    var user_1 = new userGen((Math.random().toFixed(3)), "Abdul Samad", 'https://scontent.fisb5-1.fna.fbcdn.net/v/t2d&oe=5B6794D5', (new Date().getTime()));
+    var user_2 = new userGen((Math.random().toFixed(3)), "Mohammad Shaiq", 'https://encrypted-tbn0.gstatic.com/images?', (new Date().getTime()));
+    var user_3 = new userGen((Math.random().toFixed(3)), "Riaz Illyas", "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2", (new Date().getTime()));
+    var user_4 = new userGen((Math.random().toFixed(3)), "Rehan sattar", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrRxLun5ylfgZHOg-BzdzZ8JBhtUQoZ4fgkk4B5UoUNL6vz5fP", (new Date().getTime()));
+    var user_5 = new userGen((Math.random().toFixed(3)), "Kashan ahmed", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kzJ0rydH34OAftFVHOlKNkEywRfLw3qWgb_xRBk3GkDxq4CU", (new Date().getTime()));
+    var user_6 = new userGen((Math.random().toFixed(3)), "Mohammad kashif Sulaiman", "https://sconten16ea4b28da56e8&oe=5B321264", (new Date().getTime()));
+    var user_7 = new userGen((Math.random().toFixed(3)), "Arsalan", "https://scontent-mrs1-1.xx.fbcda20bee3ae42f13fe857f162f0&oe=5B2E8241", (new Date().getTime()), );
+    var user_8 = new userGen((Math.random().toFixed(3)), "muhammad Asif", "https://scontent-mrs1-1.xx.fb4_2112917362277955_2654747451034470543_n.jpg?_ed678a4f&oe=5B36544F", (new Date().getTime()));
+    var user_9 = new userGen((Math.random().toFixed(3)), "Owais", "https://scontent-mrs1-1.xx.fbcd638_74596283a4&oe=5B35B152", (new Date().getTime()), );
+    var user_10 = new userGen((Math.random().toFixed(3)), "Waqas", "https://scontent-mrs1-1.xx.fbcdn.net/v/t1.0-1/p16d1d5c33c3d6dd435109278de3a175399&oe=5B705CF9", (new Date().getTime()), );
+
+
+
+    var users = [user_1, user_2, user_3, user_4, user_5, user_6, user_7, user_8, user_9, user_10];
+    user_1.friends = [user_4.id, user_7.id, user_6.id]
+    user_2.friends = [user_5.id,]
+    user_3.friends = [user_1.id, user_5.id, user_10.id, user_4.id, user_9.id]
+    user_4.friends = [user_8.id, user_2.id, user_7.id]
+    user_5.friends = [user_4.id, user_1]
+    user_6.friends = [user_3.id, user_2]
+    user_7.friends = [user_4.id, user_1]
+    user_8.friends = [user_6.id, user_5]
+    user_9.friends = [user_2.id, user_1]
+    user_10.friends = [user_4.id, user_9]
+
+
+
+    // function ShowFriends() {
+    //     for (var i = 0; i < users.length; i++) {
+    //         console.log("======== " + users[i].name + "'s friends ========");
+    //         for (var j = 0; j < users[i].friends.length; j++) {
+    //             for (var k = 0; k < users.length; k++) {
+    //                 if (users[i].friends[j] == users[k].id) {
+    //                     console.log(users[k].name);
+    //                     break;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // ShowFriends()
+
+
+
+
+    // function addFriend(userId, id) {
+    //     for (var i = 0; i < users.length; i++) {
+    //         if (userId == users[i].id) {
+    //             for (var j = 0; j < users.length; j++) {
+    //                 if (id == users[j].id) {
+    //                     users[i].friends.push(users[j].id); console.log(users[i].name + " and " + users[j].name + " are friends.")
+    //                     break
+    //                 }
+    //             }
+    //         }
+    //         break;
+    //     }
+    // }
+
+    // addFriend(user_1.id, [user_4.id])
+
+
+
+
+//     function deleteFreind(userId, id) {
+
+//         for (var i = 0; i < users.length; i++) {
+
+//             if (userId == users[i].id) {
+
+//                 for (var j = 0; j < users[i].friends.length; j++) {
+
+//                     if (id == users[i].friends[j]) {
+
+//                         for (var k = 0; k < users.length; k++) {
+
+//                             if (id == users[k].id) {
+
+//                                 console.log(users[k].name + " Was Removed");
+//                                 break;
+//                             }
+//                         }
+//                         users[i].friends.splice(j, 1);
+//                         break
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+// deleteFreind(user_1.id , user_4.id)
+
+</script>
+
+</html>

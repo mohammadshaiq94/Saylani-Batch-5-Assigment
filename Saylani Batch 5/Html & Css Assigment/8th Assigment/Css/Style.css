@@ -1,0 +1,156 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo img{
+    width: 120px;
+    height: 30px;
+
+}
+.search-txt{
+    /* width: 150px; */
+    font-size: 16px;
+    /* background: white; */
+    background:url(../Images/Search.png) left no-repeat;
+    /* background: no-repeat; */
+    background-size: 15px;
+    height: 30px;
+    padding-left: 20px;
+    border: 1px solid green ;
+
+    
+    
+}
+
+.p{
+
+font-size: 13px;
+color: rgb(56,56,56);
+font-weight: bold;
+}
+
+.p a{
+    color: rgb(64,64,64);
+    text-decoration: none;
+
+}
+
+.p a:hover{
+        color: green;
+    
+}
+
+.p a:actives{
+    color: rgb(64,64,64);
+
+
+}
+#button1{ 
+    border: 1px solid green;
+    color: white;
+    background-color: #4CBB17;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+
+
+
+}
+
+#button1:hover{
+    background-color: green;
+}
+
+
+.tab{
+    font-size: 13px;
+    font-weight: bold;
+}
+.tab-link a{
+    text-decoration: none;
+    color: rgb(64,64,64); 
+}
+
+.tab-link a:hover{
+    text-decoration: none;
+    color:black; 
+}
+
+.slider img{
+    width: 100%;
+}
+.tab2{
+    color: #888888;
+    font-size: 13px;
+    background-color: #505050;
+    height: 60px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+.drop{
+    font-size: 20px;
+}
+
+.tab3 table{    
+    border: 1px solid #B8B8B8 ;
+    text-align: center;
+    color: #989898;
+    height: 300px;
+    width:950px;
+    border: 3 px solid #909090;
+    
+
+}
+
+.tab4 table{
+    text-align: center;
+    height: 200px;
+    width: 950px;
+    border: 1px solid #B8B8B8 ;
+}
+
+.tab4 table p{
+   font-size: 25px;
+}
+
+.tab4 .left{
+    text-align: left;
+    font-size: 12px;
+    color: #989898;
+}
+
+.tab4 input{
+    border: 1px solid #787878;
+    background-color: white;
+    height: 40px;
+    width:150px;
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tab4 .tick{
+    text-align: center;
+}
+
+.tab4 .tick img{
+    width: 60px;
+}
+
+.tab5 table{
+    width:1000px;
+    height: 450px;
+
+    
+}
+
+footer{
+    width: 100%;
+    color: white;
+    height: 200px;
+    background-color: 	#787878;
+}
+
+footer img {
+    width: 30px;
+}

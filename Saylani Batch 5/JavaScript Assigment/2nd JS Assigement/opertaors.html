@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operators</title>
+	
+</head>
+<body>
+	<h4>var text = "Hello World";<br>
+		var secondText = "Hello Pakistan";<br>
+		var number = 24;<br>
+		var secondNumber = 24;<br>
+	</h4>
+
+	<hr />
+
+	<h4>Q.1 : text++ ?</h4>
+	<h4>ANSWER : Not A NUMBER(NaN), because it doesn't contain any number to increment.</h4>
+
+	<h4>Q.2 : number++ ?</h4>
+	<h4>ANSWER : 24, beacuse there is no statement execution for post increment</h4>
+
+	<h4>Q.3 : ++number ?</h4>
+	<h4>ANSWER : 25, beacuse it will increment before any of the statemnt execution.</h4>
+
+	<h4>Q.4 : number++ + ++number * ++secondNumber ?</h4>
+	<h4>ANSWER :the number are both same 24 the first number is 25(due to post increment) by directly it return then the value of second number is become 25 of ++number(orginal value of number is 24 due to increase before .now it become it 25 and now++ it becom 26) = 26*secondNumber and + 24=674</h4>
+
+	<h4>Q.5 : number + text + secondNumber ?</h4>
+	<h4>ANSWER : "24Hello World24", because it becomes string after concatenating numbers with string.</h4>
+
+	<h4>Q.6 : number + text + secondNumber*number ?</h4>
+	<h4>ANSWER : "24Hello World576", because secondNum and number are multiplied and then concat with string.</h4>
+
+	<h4>Q.7 : (number + "") + secondNumber ?</h4>
+	<h4>ANSWER : "2424", because in bracket it becomes string.</h4>
+
+	<h4>Q.8 : (number + "") * secondNumber ?</h4>
+	<h4>ANSWER : 576, it multplied beacuse this `""` is empty and hence multiplied easily.</h4>
+
+	<h4>Q.9 : false * number ?</h4>
+	<h4>ANSWER : 0 , beacuse false is 0 and 0x24 = 0.</h4>
+
+	<h4>Q.10 : true * secondNumber ?</h4>
+	<h4>ANSWER : 24 , beacuse true is 1 and 1x24 = 24.</h4>
+</body>
+</html>

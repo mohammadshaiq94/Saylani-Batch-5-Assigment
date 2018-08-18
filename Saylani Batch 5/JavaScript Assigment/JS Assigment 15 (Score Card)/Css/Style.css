@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.Score {
+
+    margin-top: 35px;
+
+}
+
+.input1{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 90px;
+
+}
+
+.input2{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 75px;
+
+}
+
+
+.input3{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 75px;
+
+}
+
+
+.input4{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 65px;
+
+}
+
+
+
+.input5{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 65px;
+
+}
+
+
+
+.input6{
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 90px;
+    margin-left: 90px;
+
+}
+
+
+
+.add    {
+
+    margin-top: 90px;
+    width: 80px;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+
+.table1{
+    margin-top: 60px;
+}
+
+
+
+.detail td{
+
+    display: inline;
+    padding-left: 125px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+.table2 td{
+
+    font-size: 18px;
+    padding-top: 35px;
+
+
+
+}
+
+.edit{
+    padding-left: 138px;
+
+}
+
+.name {
+    padding-left:145px ;
+
+}
+
+.run {
+    padding-left:155px ;
+
+}
+
+
+.ball{
+    padding-left:115px ;
+}
+
+
+.four{
+
+    padding-left: 120px;
+
+
+}
+
+.six{
+    padding-left: 125px;
+}
+
+.sr{
+    padding-left: 125px;
+}
+
+
+#nameUpdate{
+    margin-left: -16px;
+    width: 90px;
+}
+
+#runUpdate{
+    width: 10px;
+    padding-right: 15px;
+    padding-left: 6px;
+    margin-left: -39px;
+}
+
+#ballUpdate{
+    width: 15px;
+    padding-right: 15px;
+    padding-left: 5px;
+    margin-left: -20px;
+}
+
+#fourUpdate{
+    width: 30px;
+    padding-left: 5px;
+    margin-left: -20px;
+}
+
+#sixUpdate{
+    width: 30px;
+    padding-left: 5px;
+    margin-left: -20px;
+}
+
+#srUpdate{
+    width: 10px;
+    padding-right: 15px;
+    padding-left: 6px;
+    margin-left: -17px;
+}
+
+#update{
+    width: 60px;
+    margin-Left:9px;
+}
+
+#clean{
+    width: 60px;
+    margin-Left:50px;
+}
+
+

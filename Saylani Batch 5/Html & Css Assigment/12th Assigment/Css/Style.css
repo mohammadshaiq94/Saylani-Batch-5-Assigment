@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+   ul{
+       margin: auto;
+       padding: 0;
+       list-style: none;
+
+
+   } 
+
+ul .radius{
+}
+
+   ul li{
+       float: left;
+border-radius: 25px;
+ 
+       width: 250px;
+       height: 40px;
+       background-color: black;
+       color: white;
+       opacity: .8;
+       line-height: 40px;
+       text-align: center;
+   }
+
+   ul li a{
+       text-decoration: none;
+       color: white;
+       display: block;
+   }
+
+   ul li a:hover{
+    transition: background-color 2s ease;
+  background-color: red;
+	border:1px dotted red;
+border-radius: 26px;
+
+  
+   }
+
+   ul li ul li{
+       visibility:hidden;
+       transition: 3s all ;
+	margin-top:2px;
+	
+   }
+
+   ul li:hover ul li{
+       animation: drop 1s ease;
+       visibility:visible;
+  
+   }
+    
+@keyframes drop{
+
+0%{
+    transform: scale(2,2) rotate(90deg)
+}
+
+}

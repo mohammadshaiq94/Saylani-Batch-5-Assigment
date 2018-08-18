@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TASK 1</h1>
+    <br>
+    <a href="javascript:viod(0)" onclick="alert('HELLO EVERYONE!!!')">CLICK ME</a>
+    <br>
+    <h1>TASK 2</h1>
+    <br>
+    <button type="button" onclick="alert('HELLO EVERY ONE!!')">CLICK ME</button>
+    <br>
+    <h1>TASK 3</h1>
+    <br>   
+    <a href="javascript:viod(0)" onclick="task3()">GREET ME</a>
+    <br>
+    <h1>TASK 4</h1>
+    <br>
+    <a href="javascript:void(0)" onclick="task4()">GREET ME</a>
+    <br>
+    <h1>TASK 5</h1>
+    <br>
+    <img src="Images/app.jpg" onclick="alert('to download this app goto play store.')">
+    <br>
+    <h1>TASK 6</h1>
+    <br>
+    <img src="Images/ThomasEdison.jpg" alt="" onmouseover="src='Images/bulb.jpg'" onmouseout="src='Images/ThomasEdison.jpg '">
+    <br>
+    <h1>TASK 7</h1>
+    <br>
+    <img src="Images/bulb.jpg" onmouseover="this.width=150">
+  
+</body>
+    <script>
+        ///  TASK 3
+        function task3(){
+            var userInput = prompt("Enter your name...");
+            alert("hello! " + userInput);
+        }
+
+        /// TAsK 4
+        function task4(){
+            var userInput = prompt("Enter your name?");
+            var nameLenght = userInput.length;
+            alert('HEllo! ' + userInput + "\nLenght of the user input: " + nameLenght)
+        }
+    </script>
+</html>

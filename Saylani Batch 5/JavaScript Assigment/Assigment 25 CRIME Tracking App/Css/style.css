@@ -1,0 +1,93 @@
+body{
+
+background-image: url('../Images/crime.jpeg') ;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.img-fluid{
+
+    width: 200px;
+}
+
+#table{
+    border-color: white;
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+
+
+.img-fluid{
+    margin-top: 100px;
+    margin-left: 450px;
+}
+
+
+#noResult{
+
+margin-left: 400px;
+
+}
+h1{
+
+    color: white;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.detail{
+
+    border: 1px solid white;
+    width: 500px;
+    height: 200px;
+    margin-left: 450px;
+    margin-top: 100px;
+    padding-left: 140px;
+    padding-top: 20px;
+
+}
+
+#selectedName{
+
+
+
+    margin-top: 20px;
+    width: 250px;
+}
+
+
+#selectedForce{
+
+    margin-top: 50px;
+    width: 250px;
+
+
+}
+
+
+.btn{
+
+
+
+    margin-top: 40px;
+    margin-left: 70px;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    width: 80px;
+
+
+}
+
+#results{
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 400px;
+  
+}
+

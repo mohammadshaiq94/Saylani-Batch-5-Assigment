@@ -1,0 +1,364 @@
+ 
+     *{
+        margin: 0px;
+        padding: 0px;
+
+    } 
+    
+    body {
+        background-color: rgb(245, 244, 241);
+        font-family: Arial, Helvetica, sans-serif; 
+
+    }
+
+
+
+  
+     
+
+
+    
+
+    .Header{
+        
+        /* border:1px solid black; */
+        /* color: white; */
+        background-color: rgb(59, 89, 152);
+        /* display: flex; */
+        height: 85px;
+        /* margin: auto; */
+        display: flex;
+        justify-content: space-around;
+        
+     
+    
+
+
+   
+    }
+
+    .logo{
+        /* display: inline; */
+        /* border:1px solid black; */
+        color: white;
+        font-size: 20px;
+        margin-right: 400px;
+        margin-left: 1300px;
+        
+      
+        
+
+       
+        /* align-items: center; */
+        margin-top: 30px;
+        /* margin-top: 50px; */
+
+
+
+  
+    }
+
+.login{
+    margin-right: 1300px;
+
+
+   /* margin: 20px auto; */
+   margin-top: 20px;
+
+
+    /* margin: auto; */
+    /* margin-right: 1200px */
+    /* margin-top: 30px; */
+	 /* margin-top:20px; */
+     /* display: flex; */
+     /* justify-content: space-around; */
+    /* align-items: center; */
+
+}
+
+.table1{
+
+    font-size:12px;
+    color: white;
+
+}
+
+
+.loginbut1 {
+    background-color: rgb(79, 99, 147);
+    margin-right: 10px;
+    margin-left:10px;
+    padding:3px;
+    width:65px;
+    color:white;
+    border:1px solid rgb(41, 72, 125);
+}
+.loginbut1:hover { background-color: rgb(55, 80, 133);
+    color: black; 
+}
+
+.loginbut1:hover { background-color: rgb(55, 80, 133);
+        color: black; 
+}
+
+.log {
+    /* margin-bottom: 10px; */
+    margin-right: 10px;
+}
+
+
+.ForgotACC{
+   
+  display: flex;
+  justify-content: flex-end;
+
+  margin-right: 35px;
+    
+    
+}
+
+.ForgotACC a{
+color: rgba(245, 238, 238, 0.733);
+
+
+
+
+
+
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+
+.content{
+
+
+
+     /* align-items: center; */
+     display: flex;
+    justify-content: space-around; 
+    background-color: rgb(236, 238, 243);
+}
+
+
+
+.social{
+
+
+
+
+	/* margin:auto; */
+    /* margin-left: 20px;
+    margin-top: 30px; */
+    margin-left: 1200px;
+    margin-top:30px;
+    color: rgb(55, 80, 133);
+    
+
+}
+
+
+
+
+
+.data{
+
+    margin-top: 15px;
+    margin-right: 1200px;
+
+
+  	/* margin-right:200px; */
+
+     /* padding-right: 60px;  */
+     /* margin-bottom: 30px; */
+   /* margin-right: 30px; */
+ 
+}
+
+.data table{
+    widows: auto;
+
+}
+
+
+.size1{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    color: #323232;
+
+
+} 
+
+.size2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #323232;
+    font-size: 20px;
+
+} 
+
+
+
+input.height {
+        height: 40px;
+        margin-top: 10px;
+        font-size: 15px;
+
+
+        
+}
+
+
+
+
+.DOB {
+    display: flex;
+    font-size: 35px;
+    align-content: flex-end;
+    padding-left: 10px;
+}
+.DOB select{
+    height:32px;
+    padding:5px;
+    margin:2px 2px 15px 0px  
+}
+
+.birth{
+    font-size: 18px;
+    padding-left: 10px;
+  
+}
+
+.Bday-help  {
+    /* width:150px; */
+    font-size: 12px;
+    /* margin-left: 5px; */
+}
+
+.Gender {
+    width:180px;
+    margin-left:1px;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.Gender input {
+    height:20px;
+    padding:5px;
+    margin:2px 2px 15px 2px;  
+}
+
+.CreateAc-Help{
+        margin-left: 10px;
+        font-size: 12px;
+
+
+}
+
+.CreateACbutton {
+    margin-left: 10px;
+    width:180px;
+    margin-top: 20px;
+    padding: 6px;
+    font: 400 18px Arial;
+    align-content: center;
+    color: white;
+    background-color: #6AA555;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px; 
+  
+} 
+#createbutton:hover{
+    background-color: rgb(133, 204, 108);
+    cursor: pointer;
+}
+
+.reg-page-spl{
+    margin-left: 10px;
+    margin-top: 30px;
+font-size: 12px;
+
+
+}
+
+
+
+.FB_WLangList {
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-decoration: none;
+    margin-right: 630px;
+
+}
+
+.FB_WLangList li{
+
+
+    display: inline;
+    list-style: none;
+    font-size: 12px;
+    margin-top: 30px;
+
+    /* margin-left: 40px; */
+ 
+
+
+    
+}
+
+
+.FB_WLangList li a{
+
+    color: rgb(0, 64, 255)
+  
+    
+}
+
+
+.contents_Area {
+
+
+    margin-top: 20px;
+    font-size: 12px;
+
+
+    
+  
+}
+
+
+.contents_Area a{
+    color: rgb(0, 64, 255);
+
+}
+.contents_Area table {
+
+    display: flex;
+    justify-content: space-around;
+    
+
+
+    margin-right: 300px;
+
+
+
+    margin-top: 10px;
+
+}
+
+
+
+
+
+

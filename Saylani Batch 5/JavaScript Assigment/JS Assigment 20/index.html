@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Assigment 20</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        //         function greet(person) {
+        //             if (person.name == { name: 'amy' }.name) {
+        //                 return 'hey amy'
+        //             } else {
+
+        //                 return 'hey arnold'
+        //             }
+        //         }
+
+        //         greet({ name: 'amy' })
+
+
+
+
+        // //Task 2
+
+        // for (var i = 0; i < 4; i++) {
+        //     console.log('outside timeout ' , i) 
+        // setTimeout(function(){
+
+        //     console.log(4 - --i)
+
+        // } , 0);
+
+        // } 
+
+
+
+
+
+
+        //task 3 
+
+        var dog = {
+        name: 'doggo',
+        sayName: function (name) {
+            console.log(name)
+        }
+    }
+    var sayName = dog.sayName
+      sayName(dog.name)
+
+
+
+
+
+        //task 4
+
+        function Dog(name) {
+            this.name = name
+        }
+        Dog.prototype.bark = function () {
+            console.log(this.name + ' says woof')
+        }
+        var fido = new Dog('fido')
+        // fido.bark()
+
+
+
+
+        //task 5
+
+
+        function isBig(thing) {
+            if (thing === 0 || thing === 1 || thing === 2) {
+                return false
+            }
+            return true
+        }
+        isBig(1) // false
+        isBig([2]) // false
+        isBig([3]) // true
+
+
+
+
+    </script>
+
+</body>
+
+</html>

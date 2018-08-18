@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+</head>
+<body>
+    
+    <div class="grid">
+
+        <div id="quiz">
+            <h1 id="title">Quiz</h1>
+            <hr style="margin-top: 20px;">
+
+            <p id="question"></p>
+
+            <form id="options">
+
+                <input type="radio" name="option" id="option-1" onclick="toSelect()"><label for="option-1"></label><br><br>
+                <input type="radio" name="option" id="option-2" onclick="toSelect()"><label for="option-2"></label><br><br>
+                <input type="radio" name="option" id="option-3" onclick="toSelect()"><label for="option-3"></label><br><br>
+                <input type="radio" name="option" id="option-4" onclick="toSelect()"><label for="option-4"></label><br>
+            
+            </form>
+
+
+
+                <hr style="margin-top:50px;">
+
+                <footer>
+
+                    <p id="progress"> </p>
+                    <button id="next" onclick="next()">Next</button>
+                   
+
+                </footer>
+
+        
+        
+
+        
+        
+        </div>
+    </div>
+
+
+ 
+ <script src="Js/app.js"></script>    
+</body>
+</html>

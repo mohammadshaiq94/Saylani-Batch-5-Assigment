@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Task 1</h1>
+    <button type="button" onclick="tableAdder()">ADD A TABLE</button>
+    <br>
+    <br>
+    <div id="div1"></div>
+    <h1>Task 2</h1>
+    <p>
+        <a id="myLink" type="text/html" hreflang="en-us" rel="nofollow" target="self" href="http://www.abc.com/">Visit ABC</a>
+        <br>
+        <br>
+        <button onclick="getAttr()">Click here to see Attributes</button>
+    </p>
+</body>
+<script>
+
+    function tableAdder() {
+        var numOfCol = +prompt("Enter the number of Columns...");
+        var numOfRows = +prompt("Enter the number of Rows...");
+        var div1 = document.getElementById("div1");
+        var table = document.createElement("table");
+        div1.appendChild(table);
+        for (var i = 0; i < numOfCol; i++) {
+            var newCol = document.createElement("tr");
+            table.appendChild(newCol);
+            table.setAttribute("width", "200px");
+            table.setAttribute("height", "200px")
+            table.setAttribute("border", "2")
+            for (var j = 0; j < numOfRows; j++) {
+                var newRow = document.createElement("td");
+                newRow.innerHTML = "Row " + Number(i + 1) + "<br>Column " + Number(j + 1);
+                newCol.appendChild(newRow);
+            }
+        }
+    }
+
+
+
+
+
+    function getAttr() {
+        var anccor = document.getElementById("myLink");
+        var attrs = anccor.attributes;
+        console.log(attrs)
+        for (var k = 0; k < attrs.length; k++) {
+            alert("The attribute \'" + attrs[k].name + "\' has the value \'" + attrs[k].value + "\'");
+        }
+    }
+</script>
+
+</html>

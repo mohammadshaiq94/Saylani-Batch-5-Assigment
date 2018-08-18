@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ramzan App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="Css/style.css">
+    
+    <link rel="manifest" href="/manifest.json">
+
+
+      <!-- Add to home screen for Safari on iOS -->
+ 
+ <!-- Add to home screen for Safari on iOS -->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <meta name="apple-mobile-web-app-title" content="Weather PWA">
+ <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+ <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+ <meta name="msapplication-TileColor" content="#2F3BA2">
+
+
+</head>
+
+<body>
+
+
+    <div>
+        <nav class="navbar navbar-dark bg-dark">
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Search here.." aria-label="Search">
+                <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <a class="navbar-brand text-white">رمضان المبارک</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mt-2">Ramzan Mubarak </h2>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <span class="table-heading">Today</span>
+
+
+                <table class="table table-striped today ">
+                    <thead class="thead-dark">
+
+                        <tr>
+
+
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Ramzan
+                                <span class="float-right">رمضان</span>
+                            </th>
+                            <th>Day</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="today">
+
+                        <tr>
+                            <td id="CurrentDate"></td>
+                            <td id="time"></td>
+                            <td id="ramzan" class="text-center">-</td>
+                            <td id="CurrentDay">
+                                <span id="urduday" class="float-right"></span>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container iftartime">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-lg-4">
+                <h4 class="text-center" id="sehrii"></h4>
+                <h1 id="sehri" class="text-center"></h1>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-12 col-lg-4">
+                <h4 class="text-center">Next Prayer</h4>
+                <h1 id="prayTime" class="text-center"></h1>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-12 col-lg-4">
+                <h4 class="text-center">Remaining Time</h4>
+                <h1 id="RemainingTime" class="text-center"></h1>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <table id="myTable" class="table table-striped calander ">
+
+        <thead class="thead-dark">
+            <tr>
+                <th>No</th>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Sehri</th>
+                <th>Aftari</th>
+
+            </tr>
+        </thead>
+
+
+
+
+        <tbody class="thead-dark">
+
+            <tr id="17/5">
+                <td>1</td>
+                <td>17 - May -2018</td>
+                <td>Thursday</td>
+                <td>04:22:07 AM</td>
+                <td>07:09:44 PM</td>
+
+
+            </tr>
+
+
+            <tr id="18/5">
+
+                <td>2</td>
+                <td>18 - May -2018</td>
+                <td>Friday</td>
+                <td>04:21:28 AM</td>
+                <td>07:10:15 PM</td>
+
+            </tr>
+
+            <tr id="19/5">
+
+                <td>3</td>
+                <td class="Dte">19 - May -2018</td>
+                <td>Saturday</td>
+                <td>04:20:50 AM</td>
+                <td>07:10:45 PM</td>
+             
+
+            </tr>
+
+            <tr id="20/5">
+                <td>4</td>
+                <td>20 - May -2018</td>
+                <td>Sunday</td>
+                <td>04:20:14 AM</td>
+                <td>07:11:16 PM</td>
+
+            </tr>
+
+
+
+
+
+
+            <tr id="21/5">
+
+                <td>5</td>
+                <td>21 - May -2018</td>
+                <td>Monday</td>
+                <td>04:19:39 AM</td>
+                <td>07:11:46 PM</td>
+  
+
+            </tr>
+
+            <tr id="22/5">
+
+                <td>6</td>
+                <td>22 - May -2018</td>
+                <td>Tuesday</td>
+                <td>04:19:05 AM</td>
+                <td>07:12:17 PM</td>
+
+            </tr>
+
+            <tr id="23/5">
+
+                <td>7</td>
+                <td>23 - May -2018</td>
+                <td>Wednesday</td>
+                <td>04:18:33 AM</td>
+                <td>07:12:47 PM
+
+            </tr>
+
+
+
+
+            <tr id="24/5">
+
+                <td>8</td>
+                <td>24 - May -2018</td>
+                <td>Thursday</td>
+                <td>04:18:02 AM</td>
+                <td>07:13:16 PM</td>
+
+            </tr>
+
+            <tr id="25/5">
+                    <td>9</td>
+                    <td>25 - May -2018</td>
+                    <td>Friday</td>
+                    <td>04:17:32 AM</td>
+                    <td>07:13:46 PM</td>
+    
+         
+
+            </tr>
+
+            <tr id="26/5">
+                    <td>10</td>
+                    <td>26 - May -2018</td>
+                    <td>Saturday</td>
+                    <td>04:17:04 AM</td>
+                    <td>07:14:15 PM</td>
+            </tr>
+
+            <tr id="27/5">
+                    <td>11</td>
+                    <td>27 - May -2018</td>
+                    <td>Sunday</td>
+                    <td>04:16:38 AM</td>
+                    <td>07:14:44 PM</td>
+
+            </tr>
+
+            <tr id="28/5">
+                    <td>12</td>
+                    <td>28 - May -2018</td>
+                    <td>Monday</td>
+                    <td>04:16:12 AM</td>
+                    <td>07:15:13 PM</td>
+
+            </tr>
+
+            <tr id="29/5">
+                    <td>13</td>
+                    <td>29 - May -2018</td>
+                    <td>Tuesday</td>
+                    <td>04:15:49 AM</td>
+                    <td>07:15:42 PM</td>
+
+            </tr>
+
+            <tr id="30/5">
+                    <td>14</td>
+                    <td>30 - May -2018</td>
+                    <td>Wednesday</td>
+                    <td>04:15:26 AM</td>
+                    <td>07:16:10 PM</td>
+
+            </tr>
+
+            <tr id="31/5">
+             
+                    <td>15</td>
+                    <td>31 - May -2018</td>
+                    <td>Thursday</td>
+                    <td>04:15:06 AM</td>
+                    <td>07:16:37 PM</td>
+            </tr>
+
+            <tr id="1/6">
+                    <td>16</td>
+                <td>1 - June -2018</td>
+                <td>Friday</td>
+                <td>04:14:47 AM</td>
+                <td>07:17:05 PM</td>
+
+            </tr>
+
+
+
+
+
+            <tr id="2/6">
+                    <td>17</td>
+                    <td>2 - June -2018</td>
+                    <td>Saturday</td>
+                    <td>04:14:29 AM</td>
+                    <td>07:17:31 PM</td>
+
+            </tr>
+
+            <tr id="3/6">
+                    <td>18</td>
+                    <td>3 - June -2018</td>
+                    <td>Sunday</td>
+                    <td>04:14:13 AM</td>
+                    <td>07:17:58 PM</td>
+
+            </tr>
+
+            <tr id="4/6">
+                    <td>19</td>
+                <td>4 - June -2018</td>
+                <td>Monday</td>
+                <td>04:13:59 AM</td>
+                <td>07:18:24 PM</td>
+
+
+            </tr>
+
+
+            <tr id="5/6">
+                    <td>20</td>
+                    <td>5 - June -2018</td>
+                    <td>Tuesday</td>
+                    <td>04:13:46 AM</td>
+                    <td>07:18:49 PM</td>
+    
+            </tr>
+
+
+
+            <tr id="6/6">
+                    <td>21</td>
+                    <td>6 - June -2018</td>
+                    <td>Wednesday</td>
+                    <td>04:13:35 AM</td>
+                    <td>07:19:14 PM</td>
+            </tr>
+
+            <tr id="7/7">
+                    <td>22</td>
+                    <td>7 - June -2018</td>
+                    <td>Thursday</td>
+                    <td>04:13:25 AM</td>
+                    <td>07:19:39 PM</td>
+
+            </tr>
+
+            <tr id="8/6">
+      
+                    <td>23</td>
+                    <td>8 - June -2018</td>
+                    <td>Friday</td>
+                    <td>04:13:17 AM</td>
+                    <td>07:20:03 PM</td>
+            </tr>
+
+            <tr id="9/6">
+                    <td>24</td>
+                    <td>9 - June -2018</td>
+                    <td>Saturday</td>
+                    <td>04:13:10 AM</td>
+                    <td>07:20:26 PM</td>
+
+            </tr>
+
+            <tr id="10/6">
+                    <td>25</td>
+                    <td>10 - June -2018</td>
+                    <td>Sunday</td>
+                    <td>04:13:05 AM</td>
+                    <td>07:20:48 PM</td>
+
+            </tr>
+
+            <tr id="11/6">
+                    <td>26</td>
+                    <td>11 - June -2018</td>
+                    <td>Monday</td>
+                    <td>04:13:02 AM</td>
+                    <td>07:21:10 PM</td>
+
+            </tr>
+
+            <tr id="12/6">
+                    <td>27</td>
+                    <td>12 - June -2018</td>
+                    <td>Tuesday</td>
+                    <td>04:13:00 AM</td>
+                    <td>07:21:31 PM</td>
+
+            </tr>
+
+            <tr id="13/6">
+                    <td>28</td>
+                <td>13 - June -2018</td>
+                <td>Wednesday</td>
+                <td>04:13:00 AM</td>
+                <td>07:21:52 PM</td>
+
+            </tr>
+
+            <tr id="14/6">
+                    <td>29</td>
+                    <td>14 - June -2018</td>
+                    <td>Thursday</td>
+                    <td>04:13:01 AM</td>
+                    <td>07:22:11 PM</td>
+
+            </tr>
+
+            <tr id="15/6">
+                    <td>30</td>
+                    <td>15 - June -2018</td>
+                    <td>Friday</td>
+                    <td>04:13:04 AM</td>
+                   <td>07:22:30 PM</td> 
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS-->
+    <script src="Js/data.js"></script>
+    <script src="Js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+</head>
+
+<style>
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+
+    body{
+
+        background-image: url("./Images/Background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-color: #cccccc;
+    }
+  .Todo{
+
+      font-family: "Ume P Gothic";
+      font-size: 80px;
+      height: 40px;
+
+
+  }
+
+
+  p{
+      font-size: 25px;
+      margin-top: 40px;
+  }
+
+    .main{
+
+        width: 545px;
+        height: 600px;
+
+    }
+
+    #input{
+        float: left;
+        margin-left: 90px;
+        font-size: 30px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+   #btn{
+
+        font-size: 30px;
+        float: left;
+        margin-left: 0px;
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body>
+
+<center>
+<div class="main">
+
+
+    <h1 class="Todo">Todo List</h1>
+    <p>Welcome to My Todo Application</p>
+
+    <input id="input"></input>
+
+             <button id="btn" onClick="addItem()">Add</button>
+
+
+
+
+
+    <ol id="list">
+
+
+
+
+
+
+
+
+
+
+    </ol>
+
+
+
+
+
+
+
+</div>
+
+</center>
+
+
+
+
+
+<script>
+
+function addItem(){
+
+
+
+
+//Getting input value
+
+var input = document.getElementById("input").value;
+var ul = document.getElementById("list");
+
+
+
+
+//Creating and adding list item
+
+var li = document.createElement("li");
+li.setAttribute("onClick", "updateBtn(event)");
+li.setAttribute("id", Math.random());
+li.style.fontSize = "30px";
+li.style.marginLeft = "-260px";
+li.style.cssFloat = "left";
+li.style.marginTop = "20px";
+li.style.listStyleType = "none";
+li.innerHTML = input;
+
+var edit = document.createElement("div");
+// edit.setAttribute("type", "checkbox");
+//     edit.innerHTML = "s"
+
+
+    var get = document.createElement("input");
+
+    get.setAttribute("type", "checkbox");
+    get.setAttribute("onClick", "editItem(event)")
+    get.setAttribute("id" , "check")
+    get.style.width = "1em";
+    get.style.marginRight = "30px";
+    get.style.marginTop = "-14px";
+    get.style.marginLeft = "740px";
+    get.style.cssFloat = "right";
+    get.style.position = "static";
+
+//     edit.innerHTML = "s"
+
+
+
+
+var input = document.getElementById("input").value= "";
+
+edit.appendChild(get);
+li.appendChild(edit)
+ul.appendChild(li);
+
+}
+
+
+
+
+
+
+
+//Under TExt With CheckBox //
+
+function editItem(event){
+
+if (event.path[0].checked)
+{
+    var currentItem = event.path[2];
+    currentItem.style.textDecoration = "line-through";
+
+}
+
+
+else {
+    var currentItem = event.path[2];
+    currentItem.style.textDecoration = "none";
+
+
+}
+
+}
+
+
+
+//Creating Update Button ///
+
+function updateBtn(event) {
+
+
+
+
+
+    debugger;
+    var getID = event.target;
+    var text = event.target.childNodes[0].textContent;
+    document.getElementById("input").value = text;
+
+
+    document.getElementById("btn").remove();
+
+
+
+    var olList = document.getElementById("list");
+
+
+
+
+
+   var updateButton = document.createElement("button");
+
+
+    // var getID = event.target;
+
+
+    updateButton.innerHTML = "Update";
+    updateButton.setAttribute("id", "update");
+    debugger
+    updateButton.setAttribute("onClick", "updateItem("+ getID.id +")");
+    updateButton.style.width = "100px";
+    updateButton.style.fontSize = "30px";
+    updateButton.style.cssFloat = "left";
+    updateButton.style.marginLeft = "0px";
+    updateButton.style.borderRadius = "5px";
+    updateButton.style.marginTop = "20px";
+
+
+
+
+
+olList.insertBefore(updateButton , olList.childNodes[0]);
+
+
+}
+
+function updateItem(id){
+    // console.log('id');
+    // console.log(id);
+    var input = document.getElementById("input").value;
+    debugger
+
+    var item = document.getElementById(id);
+    item.childNodes[0].textContent = input;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
