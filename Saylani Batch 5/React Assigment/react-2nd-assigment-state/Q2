@@ -1,0 +1,10 @@
+Q1 Write the difference between onClick={this.myFunc}, onClick={() => this.myFunc()} & onClick={this.myFunc.bind(this}} and when to use which one
+
+
+Answer : onClick={() => this.myFunc()} this is arrow function we use this function when we want component this.
+
+
+Answer : onClick={this.myFunc.bind(this}} in this event we bint component this to function this
+
+
+Answer : onClick={this.myFunc} in this function we have the own this which refer to its  own function 
