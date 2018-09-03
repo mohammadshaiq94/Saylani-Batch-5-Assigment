@@ -62,7 +62,8 @@ class Dashboard extends Component {
             email: '',
             salary: '',
             jobdate: '',
-            currentIndex: null
+            currentIndex: null,
+            a:false
         }
         this.classes = { props };
         this.signupInputHandler = this.signupInputHandler.bind(this);
@@ -113,17 +114,9 @@ class Dashboard extends Component {
         this.setState({email : todoValue[index].email}),
         this.setState({salary : todoValue[index].salary}),
         this.setState({jobdate : todoValue[index].jobdate})
-
+        this.setState({currentIndex: index})
     
   
-
-//    const todo = todoValue.push(todoValue[index])
-
-        // this.setState({firstname : todoValue[index].firstname})
-
-    
-    // this.setState({user: todoValue[index], currentIndex: index})
-    
   }
 
 
@@ -134,6 +127,40 @@ class Dashboard extends Component {
         this.setState({todoValue , currentIndex: null});
       }
 
+
+      update(){
+        const { todoValue } = this.state;
+            
+            var currentIndex = this.state.currentIndex
+            // var todoValue = this.state.todoValue
+        //    console.log('My index',todoVal[currentIndex])
+           var updateIndex  = todoValue[currentIndex]
+           var updateUserData  = {
+               firstname:this.state.firstname,
+               lastname:this.state.lastname,
+               email:this.state.email,
+               salary:this.state.salary,
+               jobdate:this.state.jobdate,
+           }
+           var a = todoValue.updateIndex = updateUserData
+           console.log(this.state)
+        //    updateIndex = updateUserData
+        let data = JSON.parse(JSON.stringify(this.state.todoValue))
+        data[currentIndex] = updateUserData
+        console.log("My data",data)
+           this.setState({
+              todoValue:data,
+              currentIndex:null
+           })
+           console.log(this.state)
+        //    console.log("Inde",updateIndex.firstname)
+            // if(this.state.currentIndex == this.state.todoValue){
+            //    this.state.
+
+            // }
+
+
+      }
 
     render() {
         const { classes } = this.props;
@@ -165,7 +192,19 @@ class Dashboard extends Component {
                                         shrink: true,
                                     }}
                                 />
-                                <Button onClick={this.handleSubmit} color="primary">Add Todos</Button>
+                                        {this.state.currentIndex == null ? 
+                                               <Button onClick={this.handleSubmit} color="primary">Add Todos</Button>
+                                                : 
+                                              
+                                                <Button onClick={this.update.bind(this)} color="primary">Update</Button>
+                                        
+                                    
+                                        }
+                                       
+
+                                
+                               
+                              
                             </div>
                             <Paper className={classes.root}>
                                 <Table className={classes.table}>
